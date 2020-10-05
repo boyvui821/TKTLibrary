@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D208A994252B74D800F55814 /* TKTLibrary.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D208A993252B74D800F55814 /* TKTLibrary.podspec */; };
 		D20B6DFA250E05D000DBF3E3 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20B6DF9250E05D000DBF3E3 /* GradientView.swift */; };
 		D20CDD8B2523803500339211 /* UIAlertViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CDD8A2523803500339211 /* UIAlertViewController+Extension.swift */; };
 		D20FEB2525233F2F00A7E72E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20FEB2425233F2F00A7E72E /* ImagePicker.swift */; };
@@ -74,6 +75,7 @@
 /* Begin PBXFileReference section */
 		3D9AEAE816C919B986CF0CC1 /* Pods-TKTLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKTLibrary.debug.xcconfig"; path = "Target Support Files/Pods-TKTLibrary/Pods-TKTLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 		71BC200BB2ED8E0500A3DD63 /* Pods-TKTLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKTLibrary.release.xcconfig"; path = "Target Support Files/Pods-TKTLibrary/Pods-TKTLibrary.release.xcconfig"; sourceTree = "<group>"; };
+		D208A993252B74D800F55814 /* TKTLibrary.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TKTLibrary.podspec; sourceTree = "<group>"; };
 		D20B6DF9250E05D000DBF3E3 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		D20CDD8A2523803500339211 /* UIAlertViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertViewController+Extension.swift"; sourceTree = "<group>"; };
 		D20FEB2425233F2F00A7E72E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 		D25C16D02507DC4300CB9B40 = {
 			isa = PBXGroup;
 			children = (
+				D208A993252B74D800F55814 /* TKTLibrary.podspec */,
 				D25C16DC2507DC4300CB9B40 /* TKTLibrary */,
 				D25C16DB2507DC4300CB9B40 /* Products */,
 				870A199ECD372C3EE4E5D7EC /* Pods */,
@@ -464,6 +467,7 @@
 				D2D266202524831700403DD7 /* ConclutionSpecialTableViewCell.xib in Resources */,
 				D25C17052507E22D00CB9B40 /* Analysis.storyboard in Resources */,
 				D25C16F32507DD7A00CB9B40 /* BaseHeaderView.xib in Resources */,
+				D208A994252B74D800F55814 /* TKTLibrary.podspec in Resources */,
 				D228AA1C250A723700D8CB84 /* ResultImageTableViewCell.xib in Resources */,
 				D24F3781250B2EE2005FDF87 /* ResultSpecialTableViewCell.xib in Resources */,
 				D227E6EB25086EB3000C0974 /* assets.xcassets in Resources */,
