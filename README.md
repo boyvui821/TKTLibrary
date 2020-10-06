@@ -15,9 +15,13 @@ To use this library you need to ensure you match up with the correct version of 
 1. Open your terminal and move to your folder source
 2. Create pod file using: pod init
 3. Open your pod file and input that line under use_framework
+
     pod 'TKTLibrary', :git => 'https://github.com/boyvui821/TKTLibrary.git'
+    
 4. Return your terminal and run that line:
+
     pod install
+
 5. Open file .xcworkspace at source folder 
 
 ## Usage
