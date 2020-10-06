@@ -116,7 +116,7 @@ class ResultViewController: UIViewController {
                 for arrConclution in data{
                     for i in 0..<arrConclution.count{
                         if (i == (arrConclution.count - 1)){
-                                                        arrConclution[i].isEndGroup = true
+                            arrConclution[i].isEndGroup = true
                         }
                         arr.append(arrConclution[i])
                     }
@@ -237,36 +237,50 @@ extension ResultViewController: UITableViewDelegate, UITableViewDataSource {
                 return cell
             }
         }else if indexPath.row == 1{
-            if let cell = tableView.dequeueReusableCell(withIdentifier: "ResultGeneralTableViewCell", for: indexPath) as? ResultGeneralTableViewCell{
-                let title = self.generalResult?.title?.en ?? ""
-                cell.setupTitle(title: title)
-                cell.setupData(resultData: self.generalResultData)
-                return cell
+            if (self.generalResultData.count > 0){
+                if let cell = tableView.dequeueReusableCell(withIdentifier: "ResultGeneralTableViewCell", for: indexPath) as? ResultGeneralTableViewCell{
+                    let title = self.generalResult?.title?.en ?? ""
+                    cell.setupTitle(title: title)
+                    cell.setupData(resultData: self.generalResultData)
+                    return cell
+                }
             }
+            return UITableViewCell()
+            
         } else if indexPath.row == 2{
-            if let cell = tableView.dequeueReusableCell(withIdentifier: "ResultSpecialTableViewCell", for: indexPath) as? ResultSpecialTableViewCell{
-                let title = self.specialResult?.title?.en ?? ""
-                
-                cell.setupTitle(title: title)
-                cell.setupData(resultData: self.specialResultData)
-                return cell
+            if (self.specialResultData.count > 0){
+                if let cell = tableView.dequeueReusableCell(withIdentifier: "ResultSpecialTableViewCell", for: indexPath) as? ResultSpecialTableViewCell{
+                    let title = self.specialResult?.title?.en ?? ""
+                    
+                    cell.setupTitle(title: title)
+                    cell.setupData(resultData: self.specialResultData)
+                    return cell
+                }
             }
+            return UITableViewCell()
         } else if indexPath.row == 3 {
-            if let cell = tableView.dequeueReusableCell(withIdentifier: "ConclutionGeneralTableViewCell", for: indexPath) as? ConclutionGeneralTableViewCell{
-                let title = self.generalConclution?.title?.en ?? ""
-                
-                cell.setupTitle(title: title)
-                cell.setupData(data: self.generalConclutionData)
-                return cell
+            if (self.generalConclutionData.count > 0){
+                if let cell = tableView.dequeueReusableCell(withIdentifier: "ConclutionGeneralTableViewCell", for: indexPath) as? ConclutionGeneralTableViewCell{
+                    let title = self.generalConclution?.title?.en ?? ""
+                    
+                    cell.setupTitle(title: title)
+                    cell.setupData(data: self.generalConclutionData)
+                    return cell
+                }
             }
+            return UITableViewCell()
+            
         }else if indexPath.row == 4 {
-            if let cell = tableView.dequeueReusableCell(withIdentifier: "ConclutionSpecialTableViewCell", for: indexPath) as? ConclutionSpecialTableViewCell{
-                let title = self.specialConclution?.title?.en ?? ""
-                
-                cell.setupTitle(title: title)
-                cell.setupData(data: self.arrSpecialConclution)
-                return cell
+            if (self.arrSpecialConclution.count > 0){
+                if let cell = tableView.dequeueReusableCell(withIdentifier: "ConclutionSpecialTableViewCell", for: indexPath) as? ConclutionSpecialTableViewCell{
+                    let title = self.specialConclution?.title?.en ?? ""
+                    
+                    cell.setupTitle(title: title)
+                    cell.setupData(data: self.arrSpecialConclution)
+                    return cell
+                }
             }
+            return UITableViewCell()
         }
         
         return UITableViewCell()

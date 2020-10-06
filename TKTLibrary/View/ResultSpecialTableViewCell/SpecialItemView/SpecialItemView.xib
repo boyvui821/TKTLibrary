@@ -36,7 +36,7 @@
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w2z-X9-Vgv">
                             <rect key="frame" x="20" y="90" width="374" height="1"/>
-                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="gWK-GP-xlA"/>
                             </constraints>
