@@ -8,6 +8,8 @@
 
 import UIKit
 
+public let STORY_BOARD_NAME = "Analysis"
+
 public enum TKTImage: String{
     case changeCamera = "iconChangeCamera"
     case iconCamera = "iconCamera"

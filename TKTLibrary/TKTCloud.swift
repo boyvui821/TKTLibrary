@@ -13,10 +13,6 @@ public class TKTCLoud {
     public static let shared = TKTCLoud()
     var configure: TKTConfiguration?
     
-//    init(configure: TKTConfiguration) {
-//        self.configure = configure
-//    }
-    
     public func setConfigure(configure: TKTConfiguration){
         self.configure = configure
         AppLanguage.shared.languageKey = configure.lang?.rawValue ?? TKTLanguage.EN.rawValue
@@ -27,11 +23,8 @@ public class TKTCLoud {
     }
     
     public func execute(complete: @escaping((_ json: [String: AnyObject])->Void)){
-        //        let params = ["username":"john", "password":"123456"] as Dictionary<String, String>
-        
         var request = URLRequest(url: URL(string: "https://powerful-stream-90084.herokuapp.com/api/userskin/5f4a422ddf666f0b9c9aa9e2")!)
         request.httpMethod = "GET"
-        //        request.httpBody = try? JSONSerialization.data(withJSONObject: params, options: [])
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
         let session = URLSession.shared
@@ -40,8 +33,6 @@ public class TKTCLoud {
             do {
                 let json = try JSONSerialization.jsonObject(with: data!) as! Dictionary<String, AnyObject>
                 complete(json)
-                //                let model = UserSkinModel(JSON: json)
-                //                print(json)
             } catch {
                 print("error")
             }
@@ -50,8 +41,9 @@ public class TKTCLoud {
         task.resume()
     }
     
+    //MARK: Execute Upload Image Base 4
     func executeUpload(imageBase64: String, complete: @escaping((_ json: [String: AnyObject]?, _ error: Error?)->Void)){
-
+        
         let params = ["image_base64": imageBase64,
                       "email":configure?.email ?? ""] as Dictionary<String, Any>
         let jsonData = try? JSONSerialization.data(withJSONObject: params)
@@ -66,7 +58,6 @@ public class TKTCLoud {
         
         let session = URLSession.shared
         let task = session.dataTask(with: request as URLRequest, completionHandler: { data, response, error -> Void in
-//            print(response!)
             if error != nil {
                 complete(nil, error)
             }else {
@@ -79,7 +70,14 @@ public class TKTCLoud {
                 }
             }
         })
-        
         task.resume()
+    }
+    
+    public func start(fromViewController vc: UIViewController){
+        let storyboardName = STORY_BOARD_NAME
+        let storyboardBundle = Bundle(for: AnalysisViewController.self)
+        let analysisStoryboard = UIStoryboard(name: storyboardName, bundle: storyboardBundle)
+        let analysisVC = analysisStoryboard.instantiateViewController(withIdentifier:  "AnalysisViewController")
+        vc.present(analysisVC, animated: true, completion: nil)
     }
 }
