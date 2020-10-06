@@ -103,7 +103,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "icon.png"
-    spec.resources = "TKTLibrary/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
+    spec.resources = "TKTLibrary/**/*.{png,jpeg,jpg,storyboard,xib,xcassets,strings}"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
