@@ -14,8 +14,8 @@ class ConclutionSpecialItemView: BaseView {
     @IBOutlet weak var lineView: UIView!
     
     func setupData(data: Conclution){
-        
-        if appLanguage == .VI{
+        let lang =  TKTCLoud.shared.getConfig()?.lang
+        if lang == .VI{
             titleLabel.text = data.title?.vi
             guard let info = data.data?.vi else {return}
             self.settupInfo(info: info)
@@ -28,11 +28,12 @@ class ConclutionSpecialItemView: BaseView {
     }
     
     private func settupInfo(info: [String]){
+        let lang =  TKTCLoud.shared.getConfig()?.lang
         if info.count > 0{
             var str = ""
             for item in info{
                 var value = ""
-                if appLanguage == .VI{
+                if lang == .VI{
                     value = item
                 }else{
                     value = item

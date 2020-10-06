@@ -13,9 +13,9 @@ public class TKTConfiguration{
     public var domain: String = ""
     public var apiKey: String = ""
     public var email: String = ""
-    public var lang: String = ""
+    public var lang: TKTLanguage?
     
-    public init(domain:String, apiKey: String, email: String, language: String) {
+    public init(domain:String, apiKey: String, email: String, language: TKTLanguage) {
         self.domain = domain
         self.apiKey = apiKey
         self.email = email

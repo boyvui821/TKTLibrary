@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  TKTLibrary
+
+  Created by Nguyen Hieu Trung on 10/6/20.
+  Copyright © 2020 NHTSOFT. All rights reserved.
+*/
+
+
+"CAMERA" = "Camera";
+"TAKE_PHOTO" = "Chụp ảnh ngay";
+"GALLERY" = "Bộ sưu tập";
+"UPLOAD_FACE" = "Chọn từ bộ sưu tập";
+
+"EXAMPLE_IMAGE" = "Ví dụ ảnh đủ tiêu chuẩn";
+"UPLOAD" = "Tải ảnh lên";
+"MOLE" = "Nốt ruồi";
+"ACNE" = "Mụn";
+"SPOT" = "Tàn nhang";
+"PIMPLE" = "Mụn nhọt";
+"BLACKHEAD" = "Mụn đầu đen";

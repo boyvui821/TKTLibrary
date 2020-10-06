@@ -1,0 +1,14 @@
+/* 
+  InfoPlist.strings
+  TKTLibrary
+
+  Created by Nguyen Hieu Trung on 10/6/20.
+  Copyright © 2020 NHTSOFT. All rights reserved.
+*/
+
+NSLocationAlwaysAndWhenInUseUsageDescription = "TKTLibrary need to have access to your location";
+NSLocationAlwaysUsageDescription = "TKTLibrary need to have access to your location";
+NSLocationWhenInUseUsageDescription = "TKTLibrary need to have access to your location";
+NSBluetoothPeripheralUsageDescription = "We need access to your bluetooth connection to provide the most promotion or bus routes information from BLE Accessories";
+NSCameraUsageDescription = "TKTLibrary requires access to the camera to capture your avatar";
+NSPhotoLibraryUsageDescription = "TKTLibrary requires access to the photo library to select your avatar";

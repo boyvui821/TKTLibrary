@@ -13,7 +13,8 @@ class SpecialItemView: BaseView {
     @IBOutlet weak var infoLabel: UILabel!
     
     func setupData(data: ResultData){
-        if appLanguage == .VI{
+        let lang =  TKTCLoud.shared.getConfig()?.lang
+        if lang == .VI{
             titleLabel.text = data.title?.vi
         }else{
             titleLabel.text = data.title?.en
@@ -23,7 +24,7 @@ class SpecialItemView: BaseView {
         var str = ""
         for item in endData{
             var value = ""
-            if appLanguage == .VI{
+            if lang == .VI{
                 value = item.valueVI!
             }else{
                 value = item.valueEN!

@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  TKTLibrary
+
+  Created by Nguyen Hieu Trung on 10/6/20.
+  Copyright © 2020 NHTSOFT. All rights reserved.
+*/
+
+"CAMERA" = "CAMERA";
+"TAKE_PHOTO" = "Take Photo now";
+"GALLERY" = "GALLERY";
+"UPLOAD_FACE" = "Upload face image";
+
+"EXAMPLE_IMAGE" = "Example of qualified image";
+"UPLOAD" = "Upload";
+
+"MOLE" = "MOLE";
+"ACNE" = "ACNE";
+"SPOT" = "SPOT";
+"PIMPLE" = "PIMPLE";
+"BLACKHEAD" = "Blackhead";

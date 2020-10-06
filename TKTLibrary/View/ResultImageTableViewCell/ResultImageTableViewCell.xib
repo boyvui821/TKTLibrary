@@ -238,12 +238,17 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="acneLabel" destination="gdj-7Y-eAx" id="akH-Yo-V2C"/>
                 <outlet property="acneSwitch" destination="1NQ-5M-q2j" id="Y3f-y3-ax6"/>
                 <outlet property="blackHeadSwitch" destination="9Dj-kk-lkN" id="cgc-Ms-r5X"/>
+                <outlet property="blackheadLabel" destination="tt5-fd-w7P" id="BKd-bk-ycs"/>
                 <outlet property="containerView" destination="xOl-El-nRf" id="GOt-0B-9bH"/>
+                <outlet property="moleLabel" destination="tQj-0u-7Ds" id="Wa5-ZZ-ouN"/>
                 <outlet property="moleSwitch" destination="0dv-fO-5jD" id="HvH-nq-5uj"/>
                 <outlet property="photoImageView" destination="rI6-JU-qfo" id="yho-LK-sCi"/>
+                <outlet property="pimpleLabel" destination="nZO-bM-6Cf" id="cXM-wN-DAf"/>
                 <outlet property="pimpleSwitch" destination="TPx-H4-3uL" id="s4k-NL-CkK"/>
+                <outlet property="spotLabel" destination="y7g-A1-j9p" id="rhC-XS-R6g"/>
                 <outlet property="spotSwitch" destination="1Nv-29-p1f" id="oRI-f4-R4K"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="267.1875"/>

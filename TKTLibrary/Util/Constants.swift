@@ -13,8 +13,8 @@ public enum TKTImage: String{
     case iconCamera = "iconCamera"
 }
 
-enum TKTLanguage: String{
-    case VI = "vi"
+public enum TKTLanguage: String{
+    case VI = "vi-VN"
     case EN = "en"
 }
 

@@ -19,6 +19,15 @@ public class SelectionView: BaseView {
     @IBOutlet weak var filesLabel: UILabel!
     @IBOutlet weak var uploadLabel: UILabel!
     
+    public override func awakeFromNib() {
+        super.awakeFromNib()
+        cameraLabel.text = "CAMERA".localized
+        takeLabel.text = "TAKE_PHOTO".localized
+        
+        filesLabel.text = "GALLERY".localized
+        uploadLabel.text = "UPLOAD_FACE".localized
+    }
+    
     var delegate: SelectionViewDelegate?
     
     @IBAction func onTakePhoto(_ sender: UIButton) {

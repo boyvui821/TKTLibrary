@@ -50,6 +50,10 @@
 		D285D2462524D94D00F8FCE2 /* ConclutionGeneralItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D285D2452524D94D00F8FCE2 /* ConclutionGeneralItemView.swift */; };
 		D285D2482524D96400F8FCE2 /* ConclutionGeneralItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D285D2472524D96400F8FCE2 /* ConclutionGeneralItemView.xib */; };
 		D2A431C3251658AD005B4DB8 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A431C2251658AD005B4DB8 /* UIImage+Extension.swift */; };
+		D2AB5B8F252C680000FDE12D /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AB5B8E252C680000FDE12D /* String+Extension.swift */; };
+		D2AB5B91252C6B9200FDE12D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2AB5B90252C6B9200FDE12D /* InfoPlist.strings */; };
+		D2AB5B94252C6D7D00FDE12D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2AB5B96252C6D7D00FDE12D /* Localizable.strings */; };
+		D2C6F342252C65F900B4537D /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6F341252C65F900B4537D /* AppLanguage.swift */; };
 		D2D2661E252482FB00403DD7 /* ConclutionSpecialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D2661D252482FB00403DD7 /* ConclutionSpecialTableViewCell.swift */; };
 		D2D266202524831700403DD7 /* ConclutionSpecialTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2D2661F2524831700403DD7 /* ConclutionSpecialTableViewCell.xib */; };
 		D2D266222524916000403DD7 /* ConclutionGeneralTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2D266212524916000403DD7 /* ConclutionGeneralTableViewCell.xib */; };
@@ -118,6 +122,11 @@
 		D285D2452524D94D00F8FCE2 /* ConclutionGeneralItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConclutionGeneralItemView.swift; sourceTree = "<group>"; };
 		D285D2472524D96400F8FCE2 /* ConclutionGeneralItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConclutionGeneralItemView.xib; sourceTree = "<group>"; };
 		D2A431C2251658AD005B4DB8 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		D2AB5B8E252C680000FDE12D /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		D2AB5B90252C6B9200FDE12D /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		D2AB5B95252C6D7D00FDE12D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D2AB5B97252C6D8300FDE12D /* vi-VN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "vi-VN"; path = "vi-VN.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D2C6F341252C65F900B4537D /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
 		D2D2661D252482FB00403DD7 /* ConclutionSpecialTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConclutionSpecialTableViewCell.swift; sourceTree = "<group>"; };
 		D2D2661F2524831700403DD7 /* ConclutionSpecialTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConclutionSpecialTableViewCell.xib; sourceTree = "<group>"; };
 		D2D266212524916000403DD7 /* ConclutionGeneralTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConclutionGeneralTableViewCell.xib; sourceTree = "<group>"; };
@@ -272,6 +281,8 @@
 				D25C16DD2507DC4300CB9B40 /* TKTLibrary.h */,
 				D25C16DE2507DC4300CB9B40 /* Info.plist */,
 				D227E6EA25086EB3000C0974 /* assets.xcassets */,
+				D2AB5B90252C6B9200FDE12D /* InfoPlist.strings */,
+				D2AB5B96252C6D7D00FDE12D /* Localizable.strings */,
 			);
 			path = TKTLibrary;
 			sourceTree = "<group>";
@@ -285,6 +296,7 @@
 				D2A431C2251658AD005B4DB8 /* UIImage+Extension.swift */,
 				D20FEB26252342AF00A7E72E /* UIApplication+Extension.swift */,
 				D20CDD8A2523803500339211 /* UIAlertViewController+Extension.swift */,
+				D2AB5B8E252C680000FDE12D /* String+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -320,6 +332,7 @@
 			children = (
 				D25C16EB2507DCEC00CB9B40 /* Constants.swift */,
 				D20FEB2425233F2F00A7E72E /* ImagePicker.swift */,
+				D2C6F341252C65F900B4537D /* AppLanguage.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -445,6 +458,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"vi-VN",
 			);
 			mainGroup = D25C16D02507DC4300CB9B40;
 			productRefGroup = D25C16DB2507DC4300CB9B40 /* Products */;
@@ -466,6 +480,7 @@
 				D24F3786250B3434005FDF87 /* SpecialItemView.xib in Resources */,
 				D2D266202524831700403DD7 /* ConclutionSpecialTableViewCell.xib in Resources */,
 				D25C17052507E22D00CB9B40 /* Analysis.storyboard in Resources */,
+				D2AB5B91252C6B9200FDE12D /* InfoPlist.strings in Resources */,
 				D25C16F32507DD7A00CB9B40 /* BaseHeaderView.xib in Resources */,
 				D208A994252B74D800F55814 /* TKTLibrary.podspec in Resources */,
 				D228AA1C250A723700D8CB84 /* ResultImageTableViewCell.xib in Resources */,
@@ -473,6 +488,7 @@
 				D227E6EB25086EB3000C0974 /* assets.xcassets in Resources */,
 				D24F377A250B1A70005FDF87 /* GeneralItemTableViewCell.xib in Resources */,
 				D227E6E925086345000C0974 /* SelectionView.xib in Resources */,
+				D2AB5B94252C6D7D00FDE12D /* Localizable.strings in Resources */,
 				D285D2482524D96400F8FCE2 /* ConclutionGeneralItemView.xib in Resources */,
 				D2D266222524916000403DD7 /* ConclutionGeneralTableViewCell.xib in Resources */,
 				D2D266292524950700403DD7 /* GeneralItemView.xib in Resources */,
@@ -528,6 +544,7 @@
 				D228AA20250A837E00D8CB84 /* ResultGeneralTableViewCell.swift in Sources */,
 				D2D266242524918200403DD7 /* ConclutionGeneralTableViewCell.swift in Sources */,
 				D24F377C250B1A83005FDF87 /* GeneralItemTableViewCell.swift in Sources */,
+				D2AB5B8F252C680000FDE12D /* String+Extension.swift in Sources */,
 				D25C17072507E28F00CB9B40 /* AnalysisViewController.swift in Sources */,
 				D20CDD8B2523803500339211 /* UIAlertViewController+Extension.swift in Sources */,
 				D25C16EC2507DCEC00CB9B40 /* Constants.swift in Sources */,
@@ -535,6 +552,7 @@
 				D25C16F62507DDC200CB9B40 /* TKTCloud.swift in Sources */,
 				D217487225256EEB009FC4C3 /* ConclutionSpecialItemView.swift in Sources */,
 				D227E6F02508C119000C0974 /* NotificationCenter+Extension.swift in Sources */,
+				D2C6F342252C65F900B4537D /* AppLanguage.swift in Sources */,
 				D2A431C3251658AD005B4DB8 /* UIImage+Extension.swift in Sources */,
 				D2412D6E250A33B900E7C796 /* GeneralResultView.swift in Sources */,
 				D227E6E725086326000C0974 /* SelectionView.swift in Sources */,
@@ -546,6 +564,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D2AB5B96252C6D7D00FDE12D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2AB5B95252C6D7D00FDE12D /* en */,
+				D2AB5B97252C6D8300FDE12D /* vi-VN */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D25C16E02507DC4300CB9B40 /* Debug */ = {

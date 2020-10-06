@@ -15,6 +15,7 @@ public class AnalysisViewController: BaseViewController {
     @IBOutlet weak var headerViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var scrollContentView: UIView!
+    @IBOutlet weak var examLabel: UILabel!
     
     @IBOutlet weak var scrollContentConstraintHeight: NSLayoutConstraint!
     
@@ -31,6 +32,12 @@ public class AnalysisViewController: BaseViewController {
         setupFirstHeaderAction()
         setupUI()
         addListener()
+        setupLanguage()
+    }
+    
+    func setupLanguage(){
+        examLabel.text = "EXAMPLE_IMAGE".localized
+        uploadButton.setTitle("UPLOAD".localized, for: .normal)
     }
     
     public override func viewDidLayoutSubviews() {

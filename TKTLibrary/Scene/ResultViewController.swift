@@ -230,6 +230,7 @@ extension ResultViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let lang =  TKTCLoud.shared.getConfig()?.lang
         if indexPath.row == 0 {
             if let cell = tableView.dequeueReusableCell(withIdentifier: "ResultImageTableViewCell", for: indexPath) as? ResultImageTableViewCell{
                 cell.setupData(imageUrl: self.strImageUrl ?? "",
@@ -239,8 +240,13 @@ extension ResultViewController: UITableViewDelegate, UITableViewDataSource {
         }else if indexPath.row == 1{
             if (self.generalResultData.count > 0){
                 if let cell = tableView.dequeueReusableCell(withIdentifier: "ResultGeneralTableViewCell", for: indexPath) as? ResultGeneralTableViewCell{
-                    let title = self.generalResult?.title?.en ?? ""
-                    cell.setupTitle(title: title)
+                    
+                    if let title = (lang == TKTLanguage.VI)
+                        ? self.generalResult?.title?.vi
+                        : self.generalResult?.title?.en {
+                        cell.setupTitle(title: title)
+                    }
+                    
                     cell.setupData(resultData: self.generalResultData)
                     return cell
                 }
@@ -250,9 +256,12 @@ extension ResultViewController: UITableViewDelegate, UITableViewDataSource {
         } else if indexPath.row == 2{
             if (self.specialResultData.count > 0){
                 if let cell = tableView.dequeueReusableCell(withIdentifier: "ResultSpecialTableViewCell", for: indexPath) as? ResultSpecialTableViewCell{
-                    let title = self.specialResult?.title?.en ?? ""
+                    if let title = (lang == TKTLanguage.VI)
+                        ? self.specialResult?.title?.vi
+                        : self.specialResult?.title?.en {
+                        cell.setupTitle(title: title)
+                    }
                     
-                    cell.setupTitle(title: title)
                     cell.setupData(resultData: self.specialResultData)
                     return cell
                 }
@@ -261,9 +270,13 @@ extension ResultViewController: UITableViewDelegate, UITableViewDataSource {
         } else if indexPath.row == 3 {
             if (self.generalConclutionData.count > 0){
                 if let cell = tableView.dequeueReusableCell(withIdentifier: "ConclutionGeneralTableViewCell", for: indexPath) as? ConclutionGeneralTableViewCell{
-                    let title = self.generalConclution?.title?.en ?? ""
+    
+                    if let title = (lang == TKTLanguage.VI)
+                        ? self.generalConclution?.title?.vi
+                        : self.generalConclution?.title?.en {
+                        cell.setupTitle(title: title)
+                    }
                     
-                    cell.setupTitle(title: title)
                     cell.setupData(data: self.generalConclutionData)
                     return cell
                 }
@@ -273,9 +286,14 @@ extension ResultViewController: UITableViewDelegate, UITableViewDataSource {
         }else if indexPath.row == 4 {
             if (self.arrSpecialConclution.count > 0){
                 if let cell = tableView.dequeueReusableCell(withIdentifier: "ConclutionSpecialTableViewCell", for: indexPath) as? ConclutionSpecialTableViewCell{
-                    let title = self.specialConclution?.title?.en ?? ""
+//                    let title = self.specialConclution?.title?.en ?? ""
                     
-                    cell.setupTitle(title: title)
+                    if let title = (lang == TKTLanguage.VI)
+                        ? self.specialConclution?.title?.vi
+                        : self.specialConclution?.title?.en {
+                        cell.setupTitle(title: title)
+                    }
+                    
                     cell.setupData(data: self.arrSpecialConclution)
                     return cell
                 }

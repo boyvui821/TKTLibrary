@@ -12,7 +12,8 @@ class ConclutionGeneralItemView: BaseView {
     @IBOutlet weak var titleLabel: UILabel!
     
     func setupData(data: EndData){
-        if appLanguage == .VI{
+        let lang =  TKTCLoud.shared.getConfig()?.lang
+        if lang == .VI{
             titleLabel.text = data.valueVI
         }else{
             titleLabel.text = data.valueEN

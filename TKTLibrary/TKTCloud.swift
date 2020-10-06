@@ -19,6 +19,7 @@ public class TKTCLoud {
     
     public func setConfigure(configure: TKTConfiguration){
         self.configure = configure
+        AppLanguage.shared.languageKey = configure.lang?.rawValue ?? TKTLanguage.EN.rawValue
     }
     
     public func getConfig() -> TKTConfiguration?{

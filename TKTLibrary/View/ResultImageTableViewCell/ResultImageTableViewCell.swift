@@ -16,10 +16,18 @@ class ResultImageTableViewCell: UITableViewCell {
     @IBOutlet weak var photoImageView: UIImageView!
     
     @IBOutlet weak var moleSwitch: UISwitch!
+    @IBOutlet weak var moleLabel: UILabel!
+    
     @IBOutlet weak var spotSwitch: UISwitch!
+    @IBOutlet weak var spotLabel: UILabel!
+    
     @IBOutlet weak var acneSwitch: UISwitch!
+    @IBOutlet weak var acneLabel: UILabel!
+    
     @IBOutlet weak var pimpleSwitch: UISwitch!
+    @IBOutlet weak var pimpleLabel: UILabel!
     @IBOutlet weak var blackHeadSwitch: UISwitch!
+    @IBOutlet weak var blackheadLabel: UILabel!
     
     var arrEndData: [EndData] = []{
         didSet{
@@ -36,6 +44,15 @@ class ResultImageTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.setupLanguage()
+    }
+    
+    func setupLanguage(){
+        moleLabel.text = "MOLE".localized
+        spotLabel.text = "SPOT".localized
+        acneLabel.text = "ACNE".localized
+        pimpleLabel.text = "PIMPLE".localized
+        blackheadLabel.text = "BLACKHEAD".localized
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

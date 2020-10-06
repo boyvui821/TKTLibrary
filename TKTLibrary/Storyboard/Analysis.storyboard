@@ -122,6 +122,7 @@
                         <viewLayoutGuide key="safeArea" id="NoW-lq-Dfs"/>
                     </view>
                     <connections>
+                        <outlet property="examLabel" destination="GBE-je-W4F" id="rdy-gG-Q39"/>
                         <outlet property="firstHeader" destination="JBB-qh-jM7" id="PP4-sO-6yU"/>
                         <outlet property="headerViewHeightConstraint" destination="Mpw-Vw-oph" id="zd7-NT-3hj"/>
                         <outlet property="photoImageView" destination="w8L-Eb-pk6" id="v5i-OS-iYD"/>
