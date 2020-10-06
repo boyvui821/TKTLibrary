@@ -48,6 +48,6 @@ class ViewController: UIViewController {
 
 ## License
 
-[MIT](LICENSE.md)# react-native-skin-ai
+[MIT](LICENSE.md)# TKTLibrary
   
     
